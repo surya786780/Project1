@@ -1,0 +1,94 @@
+{
+  "staffrecords": [
+    {
+      "id": 1,
+      "firstname": "surya",
+      "lastname": "kumar",
+      "loginID": "surya@13.com",
+      "mobilenum": "123456789",
+      "dob": "24-10-99",
+      "gender": "Male"
+    },
+    {
+      "firstname": "surya",
+      "lastname": "kumar",
+      "loginID": "surya@132.com",
+      "gender": "Male",
+      "dob": "2022-09-03",
+      "mobilenum": "123456789",
+      "id": 2
+    },
+    {
+      "firstname": "Keerthivasan",
+      "lastname": "K",
+      "loginID": "keerthi@gmail.com",
+      "staffid": "m045",
+      "gender": "Male",
+      "dob": "2001-01-02",
+      "mobilenum": "9355236451",
+      "id": 3
+    }
+  ],
+  "studentrecords": [
+    {
+      "id": 1,
+      "regno": "121314",
+      "firstname": "abishek",
+      "lastname": "s",
+      "loginID": "kumar@1234",
+      "mobilenum": "9586147235",
+      "dob": "20-10-2001",
+      "gender": "Male"
+    },
+    {
+      "firstname": "surya",
+      "lastname": "s",
+      "loginID": "surya@1122.com",
+      "regno": "123875",
+      "gender": "Male",
+      "dob": "2022-08-19",
+      "mobilenum": "1234765431",
+      "id": 2
+    },
+    {
+        "id": 3,
+      "regno": "112233",
+      "firstname": "kumar",
+      "lastname": "surya",
+      "loginID": "kumar@1234",
+      "mobilenum": "9586147235",
+      "dob": "20-10-2001",
+      "gender": "Male"
+    },
+    {
+        "id": 4,
+        "regno": "121314",
+        "firstname": "abishek",
+        "lastname": "surya",
+        "loginID": "kumar@1234",
+        "mobilenum": "9586147235",
+        "dob": "20-10-2001",
+        "gender": "Male"
+      },
+      {
+        "firstname": "surya",
+        "lastname": "sahad",
+        "loginID": "surya@1122.com",
+        "regno": "123875",
+        "gender": "Male",
+        "dob": "2022-08-19",
+        "mobilenum": "1234765431",
+        "id": 5
+      },
+      {
+          "id": 6,
+        "regno": "112233",
+        "firstname": "keerthi",
+        "lastname": "surya",
+        "loginID": "kumar@1234",
+        "mobilenum": "9586147235",
+        "dob": "20-10-2001",
+        "gender": "Male"
+      }
+  ]
+}

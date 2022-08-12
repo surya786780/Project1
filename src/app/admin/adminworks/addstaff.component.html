@@ -1,0 +1,125 @@
+<app-adminworks></app-adminworks>
+
+<div class="container border border-secondary my-3 py-3 card">
+  <div class="row mx-auto" style="width: 400px;">
+    <p class="display-4 "><b>Add Staff</b></p>
+  </div>
+  <form #uform="ngForm" (ngSubmit)="saveform(uform.value);">
+        <div class="my-5">
+           <div class="row">
+        <div class="col">
+          <label for="names" class="form-label mx-2">First Name</label>
+          <input
+            #fname
+            ngModel
+            name="firstname"
+            id="fnam"
+            type="text"            
+            class="form-control"
+          />
+        </div>
+        <div class="col">
+          <label for="names" class="mx-2">Last Name</label>
+          <input
+            #lname
+            ngModel
+            name="lastname"
+            id="lname"
+            type="text"
+            class="form-control"
+          />
+        </div>
+      </div>
+      
+        <br>
+
+      <div class="row">
+
+        <div class="col-5">
+          <label for="LogId" class="mx">Email ID</label>
+        </div>
+        <div class="col-5">
+          <label for="password">Staff ID</label>
+          </div>
+
+      </div>
+      <div class="row">
+        <div class="col-5">
+          <input
+            #logid
+            ngModel
+            name="loginID"
+            id="logid"
+            type="email"
+            class="form-control"
+          />
+          
+        </div>
+        <div class="col-5"><input
+          #staffID
+          ngModel
+          name="staffid"
+          id="staffid"
+          type="text"
+          class="form-control"
+        />
+      </div>
+      </div>
+      <br>
+
+      <div class="row">
+        <label class="mx-3">Gender</label>
+        <div class="col">
+        <div class="form-check">
+          <label class="radio-inline">
+          <input class="form-check-input" type="radio" name="gender" ngModel id="flexRadioDefault1" value="Male">
+            Male
+          </label>
+        </div>
+        <div class="form-check">
+        <label class="radio-inline">
+          <input class="form-check-input" type="radio" name="gender" ngModel id="flexRadioDefault2" value="Female">
+            Female
+          </label>
+        </div>
+        </div>
+      </div>
+       <br>
+      <div class="row ">
+        <div class="col">
+          <label for="birthday">Date of Birth:</label>
+          <input 
+            class="" 
+            type="date" 
+            id="birthday" 
+            name="dob"                    
+            ngModel
+            class="form-control"
+          />
+        </div>
+
+        <div class="col">
+          <label for="mobile">Mobile No:</label>
+          <input
+            class="mx-2"
+            type="tel"
+            id="phone"
+            name="mobilenum"
+            ngModel
+            pattern="[0-9]{10}"
+            class="form-control"
+          />
+        </div>
+      </div>
+
+      <div class="row mt-2">
+        <div class="col">
+          <button
+            class="btn btn-primary my-3" type="submit">
+            Save
+          </button>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>

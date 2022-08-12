@@ -1,0 +1,76 @@
+<app-adminworks></app-adminworks>
+
+<div class="container">
+  <div class="row">
+    <p class="display-4"><b>Student List</b></p>
+  </div>
+    <table class="table table-bordered" id="tab">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Register Number</th>
+            <th scope="col">FirstName</th>
+            <th scope="col">LastName</th>
+            <th scope="col">Email ID</th>
+            <th scope="col">Mobile Number</th>
+            <th scope="col">DOB</th>
+            <th scope="col">Gender</th>
+            <th scope="col">Remove Data</th>
+          </tr>
+        </thead>
+        <tr id="trow">
+          <th scope="row">0</th>
+          <td>1913508</td>
+          <td>Surya</td>
+          <td>A</td>
+          <td>surya12@gmail.com</td>
+          <td>8836987555</td>
+          <td>01/01/2001</td>
+          <td>Male</td>
+          <td>
+              <button type="button" class="btn-sm btn-danger" >Delete</button>
+          </td>
+        </tr>
+        <!-- <tr id="trow">
+          <th scope="row">0</th>
+        <td>1913507</td>
+        <td>pooja</td>
+        <td>Hegde</td>
+        <td>pooja143@gmail.com</td>
+        <td>9484746464</td>
+        <td>2001-05-01</td>
+        <td>Female</td>
+        <td>
+          <button type="button" class="btn-sm btn-danger" (click)="(rec.id)">Delete</button>
+            </td>
+          </tr> -->
+        <tbody *ngFor="let rec of lists;index as i">
+ 
+        
+
+          <tr id="trow">
+          
+            <th scope="row">{{i+1}}</th>
+            <td>{{rec.regno}}</td>
+            <td>{{rec.firstname}}</td>
+            <td>{{rec.lastname}}</td>
+            <td>{{rec.loginID}}</td>
+            <td>{{rec.mobilenum}}</td>
+            <td>{{rec.dob}}</td>
+            <td>{{rec.gender}}</td>
+            <td>
+                <button type="button" class="btn-sm btn-danger" (click)="deletedata(rec.id)">Delete</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="row">
+          <div class="col ">
+            <a class="btn btn-primary mx-5" routerLink="/addstu" role="button">New</a>
+            <!-- <input class="btn btn-primary" type="reset" value="Delete" (click)="deletedata()"> -->
+          </div>
+      </div>
+</div>
+
+
